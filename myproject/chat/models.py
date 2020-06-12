@@ -1,7 +1,7 @@
 from django.contrib.auth import get_user_model
 from django.db import models
 
-from myproject.chat.utils import attachment_upload_location
+from chat.utils import attachment_upload_location
 
 
 class Chat(models.Model):

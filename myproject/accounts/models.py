@@ -1,7 +1,7 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
-from myproject.accounts.utils import user_image_upload_location
+from accounts.utils import user_image_upload_location
 
 
 class User(AbstractUser):
