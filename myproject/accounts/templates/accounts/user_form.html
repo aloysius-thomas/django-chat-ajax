@@ -1,0 +1,20 @@
+{% extends 'home/base.html' %}
+{% block content %}
+    <div class="container">
+        <div class="m-5">
+            <h2>Register</h2>
+            <div class="p-5">
+                <form method="post" action="" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div>
+                        {{ form.as_p }}
+                    </div>
+                    <div>
+                        <button class="btn btn-primary" type="submit">Create</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
